@@ -45,5 +45,8 @@ app.post("/api/cart", cart_controller.add);
 app.post("/api/cart/checkout", cart_controller.checkout);
 app.delete("/api/cart", cart_controller.delete);
 
+//Search
+app.get("/api/search", search_controller.search);
+
 const port = 3000;
 app.listen(port, () => console.log(`Listening on the ${port}`));
